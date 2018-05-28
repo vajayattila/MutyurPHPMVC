@@ -89,7 +89,14 @@ $lang['english']=array(
 	.
 );	
 ```
-
+# Request parameters 
+## Get request method
+```php
+public function test(){
+	echo 'Test is works!<br>'; 
+	echo $this->get_request_method().'<br>'; // Which request method was used to access the page; i.e. 'GET', 'HEAD', 'POST', 'PUT'. */
+}
+```
 
 
 

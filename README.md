@@ -44,4 +44,4 @@ $config['routes']=array(
 ```
 
 The http://127.0.0.1:8001 or http://127.0.0.1:8001/index.php calling the application/controllers/defaultcontroller.php->index function.
-The http://127.0.0.1:8001/test http://127.0.0.1:8001/index.php/test calling the application/controllers/defaultcontroller.php->test function.
+The http://127.0.0.1:8001/test or http://127.0.0.1:8001/index.php/test calling the application/controllers/defaultcontroller.php->test function.

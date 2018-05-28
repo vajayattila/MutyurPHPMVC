@@ -45,3 +45,35 @@ $config['routes']=array(
 
 The http://127.0.0.1:8001 or http://127.0.0.1:8001/index.php or http://127.0.0.1:8001/default calling the application/controllers/defaultcontroller.php->index function.
 The http://127.0.0.1:8001/test or http://127.0.0.1:8001/index.php/test calling the application/controllers/defaultcontroller.php->test function.
+
+# Language handling
+
+## Setting up default language in config.php
+
+```
+/** @brief languages*/
+$config['languages']=array( // for languagehandler extension
+	'default' => 'english', 
+);
+```
+## Load language extension
+```
+$this->m_lang=$this->load_extension('languagehandler');
+```
+## Set and get language 
+```
+$this->m_lang->set_language('english');
+
+$langname=$this->m_lang->get_language();
+```
+## Get language item
+
+```
+$this->m_lang->set_language('english');
+$this->m_lang->get_item('caption');
+```
+
+
+
+
+

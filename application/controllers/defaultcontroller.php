@@ -80,7 +80,17 @@ class defaultcontroller extends workframe{
 	}
 
 	public function test(){
-		echo 'Test is works!'; 
+		echo 'Test is works!<br>'; 
+		echo $this->get_request_method().'<br>'; // Which request method was used to access the page; i.e. 'GET', 'HEAD', 'POST', 'PUT'. */
+		$params=$this->get_query_parameters();
+		print_r($params);
+		echo '<br>';
+		if(is_array($params)&&0<sizeof($params)){
+			foreach($params as $item){
+				$name=$item['name'];
+				echo $name."=>".$this->get_query_parameter($name).'<br>';
+			}
+		}
 	}
 	
 }

@@ -128,6 +128,8 @@ For example you call 127.0.0.1:8001/test?xxx=1 then your output is will:
 ```
 xxx=1
 ```
+# Session handling
 
+Documentation in progress
 
 

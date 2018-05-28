@@ -72,6 +72,23 @@ $langname=$this->m_lang->get_language();
 $this->m_lang->set_language('english');
 $this->m_lang->get_item('caption');
 ```
+## Language file in application/languages
+- Separated files by language
+- Key => value structure
+For example:
+```
+<?php
+
+if (! defined ( 'mutyurphpmvc_inited' ))
+	exit ( 'No direct script access allowed' );
+
+$lang['english']=array(
+	'caption' => 'Mütyür PHP MVC sample page',
+	.
+	.
+	.
+);	
+```
 
 
 

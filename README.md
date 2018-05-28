@@ -50,25 +50,25 @@ The http://127.0.0.1:8001/test or http://127.0.0.1:8001/index.php/test calling t
 
 ## Setting up default language in config.php
 
-```
+```php
 /** @brief languages*/
 $config['languages']=array( // for languagehandler extension
 	'default' => 'english', 
 );
 ```
 ## Load language extension
-```
+```php
 $this->m_lang=$this->load_extension('languagehandler');
 ```
 ## Set and get language 
-```
+```php
 $this->m_lang->set_language('english');
 
 $langname=$this->m_lang->get_language();
 ```
 ## Get language item
 
-```
+```php
 $this->m_lang->set_language('english');
 $this->m_lang->get_item('caption');
 ```
@@ -76,7 +76,7 @@ $this->m_lang->get_item('caption');
 - Separated files by language
 - Key => value structure
 For example:
-```
+```php
 <?php
 
 if (! defined ( 'mutyurphpmvc_inited' ))

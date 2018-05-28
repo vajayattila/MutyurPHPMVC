@@ -20,8 +20,17 @@ php -S 127.0.0.1:8001          <- if you navigated to index.php's folder.
 $config['system']=array(
 	'baseurl' => 'http://127.0.0.1:8001/',
 ```
-I you using this settings you can call the web page on 
+If you using this settings you can call the web page on 
 
 ```
 http://127.0.0.1:8001/index.php or http://127.0.0.1:8001/ 
 ```
+## Setting up sesshandler extension
+
+- sessionpath - the path of session folder
+- sessiontimeout - session timeout in milliseconds
+- sessiontype - it can be only 'file' currently
+- sessionencryptionkey - if you want to save session data in enrypted format you can set the key here (32 byte) 
+- sessionencryptionnonce - nonce's length is 24 for libsodium extension
+
+

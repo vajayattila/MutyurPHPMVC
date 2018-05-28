@@ -94,7 +94,8 @@ $lang['english']=array(
 ```php
 public function test(){
 	echo 'Test is works!<br>'; 
-	echo $this->get_request_method().'<br>'; // Which request method was used to access the page; i.e. 'GET', 'HEAD', 'POST', 'PUT'. */
+	echo $this->get_request_method().'<br>'; /* Which request method was used to access the page; i.e. 
+	'GET', 'HEAD', 'POST', 'PUT'. */
 }
 ```
 ## Get query parameters

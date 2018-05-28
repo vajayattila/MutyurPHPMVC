@@ -99,18 +99,35 @@ public function test(){
 }
 ```
 ## Get query parameters
+```php
+public function test(){
+	.
+	.
+	print_r($this->get_query_parameters());
+}
 ```
-	public function test(){
-		.
-		.
-		print_r($this->get_query_parameters());
+For example you call 127.0.0.1:8001/test?xxx=1 then your output is will:
+```php
+Array ( [0] => Array ( [name] => xxx [value] => 1 ) ) 
+```
+## Get query parameter by keyname
+```php
+public function test(){
+	$params=$this->get_query_parameters(); 
+	print_r($params);
+	echo '<br>';
+	if(is_array($params)&&0<sizeof($params)){
+		foreach($params as $item){
+			$name=$item['name'];
+			echo $name."=>".$this->get_query_parameter($name).'<br>';
+		}
 	}
+}
 ```
 For example you call 127.0.0.1:8001/test?xxx=1 then your output is will:
 ```
-Array ( [0] => Array ( [name] => xxx [value] => 1 ) ) 
+xxx=1
 ```
-
 
 
 

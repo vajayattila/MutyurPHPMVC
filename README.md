@@ -1,2 +1,0 @@
-# MutyurPHPMVC
-Minimalist PHP framework 

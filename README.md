@@ -105,7 +105,7 @@ public function test(){
 		print_r($this->get_query_parameters());
 	}
 ```
-For example you call http://127.0.0.1:8001/test?xxx=1 then your output is will:
+For example you call 127.0.0.1:8001/test?xxx=1 then your output is will:
 ```
 Array ( [0] => Array ( [name] => xxx [value] => 1 ) ) 
 ```

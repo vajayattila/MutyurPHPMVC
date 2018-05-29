@@ -89,7 +89,7 @@ $lang['english']=array(
 	.
 );	
 ```
-# Request parameters 
+# Query parameters 
 ## Get request method
 ```php
 public function test(){
@@ -130,6 +130,19 @@ xxx=1
 ```
 # Session handling
 
-Documentation in progress
-
-
+## Loading session extension
+```php
+$m_session=$this->load_extension('sesshandler');
+```
+## Setting a session value
+```php
+$m_session->set('name', 'value');
+```
+## Getting a session value
+```php
+$value=$m_session->get('name');
+```
+## Unset a session value
+```php
+$m_session->unset('name');
+```

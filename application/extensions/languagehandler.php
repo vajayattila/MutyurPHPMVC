@@ -8,8 +8,8 @@ if (! defined ( 'mutyurphpmvc_inited' ))
  *  @brief Language handler class for MutyurPHPMVC. Project home: https://github.com/vajayattila/MutyurPHPMVC
  *	@author Vajay Attila (vajay.attila@gmail.com)
  *  @copyright MIT License (MIT)
- *  @date 2017.04.12-2018.05.28
- *  @version 1.0.0.0
+ *  @date 2017.04.12-2018.05.29
+ *  @version 1.0.0.2
  */
 
 class languagehandler extends dependency{
@@ -38,7 +38,7 @@ class languagehandler extends dependency{
 	}
 	
 	public function get_version(){
-		return '1.0.0.1';
+		return '1.0.0.2';
 	}
 	
 	public function set_language($language){

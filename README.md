@@ -144,5 +144,43 @@ $value=$m_session->get('name');
 ```
 ## Unset a session value
 ```php
-$m_session->unset('name');
+$m_session->uset('name');
+```
+# Logging
+## Setting logging in config.php
+```php
+/** @brief logger's settings*/
+$config['logger']=array(
+	'error' => true,
+	'warning' => true,
+	'info' => true,
+	'system' => true,
+	'requestinfo' => true, 
+	'debug' => true,
+	'session' => true, // for sesshandler extension
+);
+```
+## Write to log 
+```php
+// you can use everywhere 
+$this->log_message('info', "Hello World!");
+```
+## Structure of a log file
+The logging file will write separated by date in application/log folder.
+```php
+ERROR       - 2018-05-28 16:20:14 --> The index controller is not set in config.php.
+type of logentry - date and time --> Message
+```
+## Define own log entry type
+```php
+// define type in config.php 
+$config['logger']=array(
+	.
+	.
+	.
+	'my_log_type' => true, // if true then my_log_type entries will be show in log file. 
+	);
+	
+// Using
+$this->log_message('my_log_type', "Message with my_log_type type.");
 ```

@@ -63,12 +63,21 @@ class languagehandler extends dependency{
 	}
 
 	protected function initLangCodeToName(){
-		$this->langcodetoname=array(
-			'hu' => 'hungarian',
-			'hun' => 'hungarian',
-			'en' => 'english',
-			'eng' => 'english',
-		);
+		// scan language codes
+		$files=glob(APPPATH().'application/languages/*.php');
+		if(FALSE!==$files){
+			foreach($files as $f){
+				require $f;
+				$pathinfo=pathinfo($f);
+				$languagename=$pathinfo['filename'];			
+				// get language name from filename
+				foreach($lang[$languagename]['lng_codes'] as $lngcode){
+					$this->langcodetoname[$lngcode]=$languagename;
+
+				}
+			}	
+		}
+		$this->log_message('system', "Scan language codes:".print_r($this->langcodetoname, true));
 	}
 
 	public function get_langname_by_code($lngcode){

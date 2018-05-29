@@ -4,6 +4,7 @@ if (! defined ( 'mutyurphpmvc_inited' ))
 	exit ( 'No direct script access allowed' );
 
 $lang['english']=array(
+	'lng_codes' => ['en', 'eng'], // <- required language codes
 	'caption' => 'Mütyür PHP MVC sample page',
 	'footer_label' => 'Project home',	
 	'footer_anchor' => 'https://github.com/vajayattila/MutyurPHPMVC',

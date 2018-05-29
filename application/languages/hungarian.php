@@ -4,6 +4,7 @@ if (! defined ( 'mutyurphpmvc_inited' ))
 	exit ( 'No direct script access allowed' );
 
 $lang['hungarian']=array(
+	'lng_codes' => ['hu', 'hun'], // <- required language codes	
 	'caption' => 'Mütyür PHP MVC minta oldal',
 	'footer_label' => 'A projekt weboldala',
 	'footer_anchor' => 'https://github.com/vajayattila/MutyurPHPMVC',

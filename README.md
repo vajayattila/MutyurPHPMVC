@@ -1,3 +1,2 @@
 # MutyurPHPMVC
-Mütyür is a minimalist PHP framework 
-{{README_mvc.md}}
+About Mütyür is a minimalist PHP framework in [README_mvc.md](README_mvc.md)

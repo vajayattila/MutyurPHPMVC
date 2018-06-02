@@ -3,16 +3,16 @@ Minimalist PHP framework
 
 # Setup config.php
 
-You can find a config.php in the application folder.
+You can find the config.php in the application folder.
 
 ## Set base_url
 
 You have to set base_url to where you can access the index.php on your web server. 
 
-For example if you using the PHP's embed web server for development:
+For example if you are using the PHP's embed web server for development:
 
 ````
-php -S 127.0.0.1:8001          <- if you navigated to index.php's folder.
+php -S 127.0.0.1:8001          <- if you have navigated to index.php's folder.
 ````
 
 ```php
@@ -20,7 +20,7 @@ php -S 127.0.0.1:8001          <- if you navigated to index.php's folder.
 $config['system']=array(
 	'baseurl' => 'http://127.0.0.1:8001/',
 ```
-If you using this settings you can call the web page on 
+If you are using this settings you can call the web page on 
 
 ```
 http://127.0.0.1:8001/index.php or http://127.0.0.1:8001/ 
@@ -106,7 +106,7 @@ public function test(){
 	print_r($this->get_query_parameters());
 }
 ```
-For example you call 127.0.0.1:8001/test?xxx=1 then your output is will:
+For example if you call 127.0.0.1:8001/test?xxx=1 then your output is will:
 ```php
 Array ( [0] => Array ( [name] => xxx [value] => 1 ) ) 
 ```
@@ -124,7 +124,7 @@ public function test(){
 	}
 }
 ```
-For example you call 127.0.0.1:8001/test?xxx=1 then your output is will:
+For example if you call 127.0.0.1:8001/test?xxx=1 then your output is will:
 ```
 xxx=1
 ```
@@ -166,7 +166,7 @@ $config['logger']=array(
 $this->log_message('info', "Hello World!");
 ```
 ## Structure of a log file
-The logging file will write separated by date in application/log folder.
+The log file will be written separated by date in application/log folder.
 ```php
 ERROR       - 2018-05-28 16:20:14 --> The index controller is not set in config.php.
 type of logentry - date and time --> Message
